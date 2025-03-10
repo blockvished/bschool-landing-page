@@ -1,22 +1,23 @@
-import React from "react";
+import React from 'react';
+import WaitlistForm from './WaitlistForm';
 
 const HeroSection = () => {
   return (
-    <section className="py-20 lg:min-h-screen flex items-center justify-center bg-white">
+    <section className="relative py-8 lg:min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 via-teal-200 to-blue-50">
       <div className="container mx-auto flex flex-col lg:flex-row items-center w-full h-full">
         {/* Image Section */}
-        <div className="relative w-full lg:w-1/2 h-64 lg:h-full">
+        <div className="relative w-full lg:w-1/2 h-full lg:h-[95vh]">
           <img
             src="/hero.webp"
             alt="Hero Image"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-lg shadow-lg"
           />
           <div className="absolute inset-0 bg-black/10"></div>
         </div>
 
         {/* Content Section */}
         <div className="w-full lg:w-1/2 lg:pl-12 flex flex-col justify-center p-6 text-center lg:text-left">
-          <h3 className="text-sm uppercase font-semibold text-red-500 animate-fadeIn">
+          <h3 className="text-sm uppercase font-semibold text-teal-600 animate-fadeIn">
             B-SCHOOL IS COMING SOON!
           </h3>
           <h1 className="text-5xl font-bold mt-2 leading-tight text-gray-900 animate-fadeIn delay-100">
@@ -42,12 +43,12 @@ const HeroSection = () => {
             access to exclusive insights, private Q+As, and inspiring episodes
             of MarieTV, delivered with love to your inbox. (Unsub anytime in a
             click.) You also agree to our
-            <a href="#" className="underline hover:text-red-500 transition">
+            <a href="#" className="underline hover:text-teal-600 transition">
               {" "}
               Terms of Use
             </a>{" "}
             and
-            <a href="#" className="underline hover:text-red-500 transition">
+            <a href="#" className="underline hover:text-teal-600 transition">
               {" "}
               Privacy Policy
             </a>
@@ -58,4 +59,5 @@ const HeroSection = () => {
     </section>
   );
 };
+
 export default HeroSection;
