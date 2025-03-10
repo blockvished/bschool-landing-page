@@ -1,24 +1,25 @@
 import React from "react";
-import HeroSection from "./components/HeroSection";
-import LearnFromBestSection from "./components/LearnFromBestSection";
-import MediaFeaturesSection from "./components/MediaFeaturesSection";
-import TestimonialsSection from "./components/TestimonialsSection.jsx";
-import FaqIntroSection from "./components/FaqIntroSection.jsx";
-import FaqSection from "./components/FaqSection.jsx";
-import FooterFormSection from "./components/FooterFormSection.jsx";
-import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import LandingPage from "./pages/LandingPage";
+import Signup from "./pages/Signup.jsx";
+import Login from "./pages/Login.jsx";
 
 const App = () => {
   return (
     <div className="bg-white text-gray-900">
-      <HeroSection />
-      <LearnFromBestSection />
-      <MediaFeaturesSection />
-      <TestimonialsSection />
-      <FaqIntroSection />
-      <FaqSection />
-      <FooterFormSection />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          {/* Main route */}
+          <Route path="/" element={<LandingPage />} />
+          
+          {/* Signup route */}
+          <Route path="/signup" element={<Signup />} />
+
+          {/* Login route */}
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };
