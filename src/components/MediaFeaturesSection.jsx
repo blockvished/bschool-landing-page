@@ -2,7 +2,7 @@
 const MediaFeaturesSection = () => {
   const mediaImages = Array(6)
     .fill(null)
-    .map((_, i) => `/${i + 1}.${i === 0 || i === 5 ? "jpg" : "png"}`);
+    .map((_, i) => `${i + 1}.${i === 0 || i === 5 ? "jpg" : "png"}`);
 
   return (
     <section className="py-16 bg-gradient-to-b from-gray-900 to-black text-white text-center">

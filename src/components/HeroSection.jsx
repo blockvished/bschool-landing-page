@@ -1,5 +1,5 @@
-import React from 'react';
-import WaitlistForm from './WaitlistForm';
+import React from "react";
+import WaitlistForm from "./WaitlistForm";
 
 const HeroSection = () => {
   return (
@@ -8,7 +8,7 @@ const HeroSection = () => {
         {/* Image Section */}
         <div className="relative w-full lg:w-1/2 h-full lg:h-[95vh]">
           <img
-            src="/hero.webp"
+            src="hero.webp"
             alt="Hero Image"
             className="w-full h-full object-cover rounded-lg shadow-lg"
           />

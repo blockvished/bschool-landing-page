@@ -8,14 +8,12 @@ import Login from "./pages/Login.jsx";
 const App = () => {
   return (
     <div className="bg-white text-gray-900">
-      <BrowserRouter>
+      <BrowserRouter basename="/bschool-landing-page">
         <Routes>
           {/* Main route */}
           <Route path="/" element={<LandingPage />} />
-          
           {/* Signup route */}
           <Route path="/signup" element={<Signup />} />
-
           {/* Login route */}
           <Route path="/login" element={<Login />} />
         </Routes>

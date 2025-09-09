@@ -61,7 +61,7 @@ const TestimonialCard = ({ testimonial }) => {
       {/* Reviewer Info */}
       <div className="flex items-center gap-4 mb-4">
         <img
-          src="/REVIEW.jpg" // Supports different reviewer images
+          src="REVIEW.jpg" // Supports different reviewer images
           alt={testimonial.name}
           className="w-14 h-14 rounded-full border border-gray-300"
         />
